@@ -1,0 +1,23 @@
+{
+    "mcpServers": {
+        "docker-mcp": {
+            "command": "docker",
+            "args": [
+                "mcp",
+                "gateway",
+                "run"
+            ],
+            "type": "stdio"
+        },
+        "supabase": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@anthropic/mcp-supabase"
+            ],
+            "env": {
+                "SUPABASE_ACCESS_TOKEN": "sbp_cf7f7cd07f85539fc46c8542ab61cad52eb22a78"
+            }
+        }
+    }
+}
